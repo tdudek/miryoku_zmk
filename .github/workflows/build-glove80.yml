@@ -1,0 +1,16 @@
+# Copyright 2023 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Build glove80'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["glove80_lh","glove80_rh"]'
+      shield: '["glove80_lh","glove80_rh"]'
+      alphas: '["qwerty"]'
+      clipboard: '[
+        "mac"
+      ]'
