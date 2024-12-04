@@ -9,7 +9,7 @@ jobs:
     secrets: inherit
     with:
       board: '["glove80_lh","glove80_rh"]'
-      shield: '["glove80_lh","glove80_rh"]'
+      #shield: '["glove80_lh","glove80_rh"]'
       alphas: '["qwerty"]'
       clipboard: '[
         "mac"
