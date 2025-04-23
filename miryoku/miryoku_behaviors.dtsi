@@ -17,5 +17,17 @@
       flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
     };
+    fullscreen_macro: fullscreen_macro {
+      compatible = "zmk,behavior-macro";
+      label = "Screenshot Full";
+      #binding-cells = <0>;
+      bindings = <&kp LS(LG(NUMBER_3))>;
+    };
+    region_macro: region_macro {
+      compatible = "zmk,behavior-macro";
+      label = "Screenshot Region";
+      #binding-cells = <0>;
+      bindings = <&kp LS(LG(NUMBER_4))>;
+    };
   };
 };
